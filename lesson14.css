@@ -270,7 +270,7 @@ body {
     align-items: center;
     
     /* КАРТИНКА: Кадр з фільму як фон для трейлера */
-    background-image: url("../images/Rectangle 10.png"); 
+    background-image: url("Rectangle 10.png"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -301,7 +301,7 @@ body {
     color: #ffffff;
     
     /* КАРТИНКА: Задній фон замку Хогвартс (Темний градієнт поверх картинки для читабельності) */
-    background-image: url("../images/Rectangle 20.png"); 
+    background-image: url("Rectangle 20.png"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
