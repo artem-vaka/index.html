@@ -32,7 +32,7 @@ body {
     padding-top: 20px;
     
     /* КАРТИНКА: Пряме посилання на ваше зображення без перейменування */
-  background-image: url("../images/Group 48 1.png");
+  background-image: url("images/Group 48 1.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -246,7 +246,6 @@ body {
     color: #556677;
 }
 
-/* Золотий логотип HP під цитатами */
 .hp-badge {
     display: block;
     width: 60px; /* Ширина логотипу */
@@ -279,7 +278,6 @@ body {
 }
 
 .btn-trailer {
-    /* Магія позиціонування: ставимо кнопку в центр картинки */
     position: absolute;
     top: 50%;
     left: 50%;
