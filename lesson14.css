@@ -22,7 +22,7 @@ body {
 }
 
 /* ==========================================================================
-   HERO SECTION (Головний баннер з Гаррі Поттером)
+   HERO SECTION (Головний баннер)
    ========================================================================== */
 .hero-section {
     height: 100vh;
@@ -32,7 +32,7 @@ body {
     padding-top: 20px;
     
     /* КАРТИНКА: Пряме посилання на ваше зображення без перейменування */
-  background-image: url("images/Group 48 1.png");
+  background-image: url("Group 48 1.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -254,7 +254,7 @@ body {
     text-indent: -9999px; /* Ховає звичайний текст, залишає тільки картинку */
     
     /* КАРТИНКА: Золотий знак HP */
-    background-image: url("../images/лого-removebg-preview.png"); 
+    background-image: url("лого-removebg-preview.png"); 
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -344,7 +344,7 @@ body {
     margin: 0 auto 15px auto;
     
     /* КАРТИНКА: Маленький золотий трикутний знак магії */
-    background-image: url("../images/deathly-hallows-a-symbol-from-the-harry-potter-vector-43546780_2-removebg-preview.png"); 
+    background-image: url("deathly-hallows-a-symbol-from-the-harry-potter-vector-43546780_2-removebg-preview.png"); 
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
