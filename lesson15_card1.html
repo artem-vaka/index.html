@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOL - Смартфон Apple iPhone 15 Pro Max</title>
+    <link rel="stylesheet" href="lesson15_card1.css">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ВЕРХНЯ ПАНЕЛЬ -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="logo-text">COOL</div>
+            <div class="top-icons">
+                <span class="icon">🤍</span>
+                <span class="icon">🔍</span>
+                <span class="icon">🛒</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ГОЛОВНЕ МЕНЮ -->
+    <header class="main-header">
+        <div class="container header-content">
+            <nav class="main-nav">
+                <a href="lesson15.html">IPHONE</a>
+                <a href="#">IPAD</a>
+                <a href="#">WATCH</a>
+                <a href="#">MACBOOK</a>
+                <a href="#">IPHONE Б/В</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ХЛІБНІ КРИХТИ (НАВІГАЦІЯ) -->
+    <div class="breadcrumbs-bar">
+        <div class="container">
+            <div class="breadcrumbs">Головна / Іphone / Одяг / Блузи</div>
+        </div>
+    </div>
+
+    <!-- ГОЛОВНИЙ БЛОК ТОВАРУ -->
+    <main class="product-page-section">
+        <div class="container product-page-container">
+            
+            <!-- Ліва частина: Галерея зображень -->
+            <div class="product-gallery">
+                <!-- Вертикальні мініатюри -->
+                <div class="thumbnails-stack">
+                    <div class="thumb-box active"><img src="images/2 (2).png" alt="Мініатюра 1"></div>
+                    <div class="thumb-box"><img src="images/3 (1).png" alt="Мініатюра 2"></div>
+                    <div class="thumb-box"><img src="images/5.png" alt="Мініатюра 3"></div>
+                    <div class="thumb-box"><img src="images/1.png" alt="Мініатюра 4"></div>
+                </div>
+                <!-- Головне велике фото -->
+                <div class="main-image-box">
+                    <img src="images/1.png" alt="Головне фото товару" class="main-product-img">
+                </div>
+            </div>
+
+            <!-- Права частина: Інформація та опції -->
+            <div class="product-info-panel">
+                <h1 class="product-main-title">СМАРТФОН APPLE IPHONE 15 PRO MAX 512GB ESIM NATURAL TITANIUM</h1>
+                
+                <div class="stock-status">Є в наявності</div>
+
+                <!-- Вибір кольору -->
+                <div class="options-section">
+                    <div class="color-picker-grid">
+                        <div class="color-circle circle-black active"></div>
+                        <div class="color-circle circle-silver"></div>
+                        <div class="color-circle circle-green"></div>
+                        <div class="color-circle circle-pink"></div>
+                        <div class="color-circle circle-yellow"></div>
+                        <div class="color-circle circle-blue"></div>
+                    </div>
+                </div>
+
+<!-- БЛОК ВИБОРУ ПАМ'ЯТІ -->
+<div class="options-section memory-group">
+    <span class="section-label">Пам'ять</span>
+    <div class="badges-row">
+        <div class="badge-item active">512 GB</div>
+        <div class="badge-item">256 GB</div>
+        <div class="badge-item">128 GB</div>
+    </div>
+</div>
+
+<!-- БЛОК ВИБОРУ ВЕРСІЇ -->
+<div class="options-section version-group">
+    <span class="section-label">Версія</span>
+    <div class="badges-row">
+        <div class="badge-item active">e-SIM</div>
+        <div class="badge-item">Global</div>
+    </div>
+</div>
+
+
+<!-- СКРИПТ ДЛЯ ПЕРЕМИКАННЯ КНОПОК (вставити в самий кінець перед </body>) -->
+<script>
+    function setupToggleButtons(groupClassName) {
+        const groupContainer = document.querySelector(groupClassName);
+        if (groupContainer) {
+            const buttons = groupContainer.querySelectorAll('.badge-item');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const currentActive = groupContainer.querySelector('.badge-item.active');
+                    if (currentActive) {
+                        currentActive.classList.remove('active');
+                    }
+                    this.classList.add('active');
+                });
+            });
+        }
+    }
+    // Запуск перемикання для кожної групи окремо
+    setupToggleButtons('.memory-group');
+    setupToggleButtons('.version-group');
+</script>
+
+
+
+
+                <!-- Блок ціни та кнопок дії -->
+                <div class="price-action-row">
+                    <div class="main-page-price">60 999 ₴</div>
+                </div>
+
+                <div class="buttons-group">
+                    <button class="btn-add-to-cart">Додати у кошик 🛒</button>
+                    <button class="btn-add-to-wishlist">♡ Обране</button>
+                </div>
+
+                <!-- Коротка інформація про доставку -->
+                <div class="delivery-info-list">
+                    <div class="delivery-info-item">
+                        <span class="info-icon">🚚</span> Доставка у відділення Нова Пошта
+                    </div>
+                    <div class="delivery-info-item">
+                        <span class="info-icon">🔄</span> 30 днів на повернення
+                    </div>
+                    <div class="delivery-info-item">
+                        <span class="info-icon">🛡️</span> Заощаджуй з Cool
+                    </div>
+                </div>
+
+                <!-- Аккордеони списків деталей -->
+                <div class="accordion-container">
+                    <div class="accordion-item">
+                        <div class="accordion-header">Опис товару <span class="arrow">∨</span></div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Доставка <span class="arrow">∨</span></div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Повернення та Рекламація <span class="arrow">∨</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- БЛОК РЕКОМЕНДОВАНИХ ТОВАРІВ -->
+    <section class="recommended-section">
+        <div class="container">
+            <h2 class="recommended-title">РЕКОМЕНДОВАНІ ТОВАРІ</h2>
+            
+            <div class="slider-wrapper">
+                <!-- Стрілка ліворуч -->
+                <button class="slider-arrow arrow-left">⟨</button>
+
+                <div class="recommended-grid">
+                    
+                    <!-- Рекомендація 1 -->
+                    <a href="lesson15_card2.html" class="rec-card">
+                        <div class="rec-wishlist">♡</div>
+                        <div class="rec-img-box"><img src="images/2.png" alt="iPhone 16 Pro Max"></div>
+                        <div class="rec-details">
+                            <h3 class="rec-item-title">Apple iPhone 16 Pro Max 512GB Black Titanium</h3>
+                            <div class="rec-item-price">78 999 ₴</div>
+                        </div>
+                    </a>
+
+                    <!-- Рекомендація 2 -->
+                    <a href="lesson15_card6.html" class="rec-card">
+                        <div class="rec-wishlist">♡</div>
+                        <div class="rec-img-box"><img src="images/6.png" alt="iPhone 14 Plus"></div>
+                        <div class="rec-details">
+                            <h3 class="rec-item-title">Apple iPhone 14 Plus 512GB</h3>
+                            <div class="rec-item-price">56 999 ₴</div>
+                        </div>
+                    </a>
+
+                    <!-- Рекомендація 3 -->
+                    <a href="lesson15_card7.html" class="rec-card">
+                        <div class="rec-wishlist">♡</div>
+                        <div class="rec-img-box"><img src="images/7.png" alt="iPhone 14 Pro Max"></div>
+                        <div class="rec-details">
+                            <h3 class="rec-item-title">Apple iPhone 14 Pro Max 1T Silver</h3>
+                            <div class="rec-item-price">84 999 ₴</div>
+                        </div>
+                    </a>
+
+                    <!-- Рекомендація 4 -->
+                    <a href="lesson15_card8.html" class="rec-card">
+                        <div class="rec-wishlist">♡</div>
+                        <div class="rec-img-box"><img src="images/8.png" alt="iPhone 15 Pro Max"></div>
+                        <div class="rec-details">
+                            <h3 class="rec-item-title">Apple iPhone 15 Pro Max 1T Black Titanium</h3>
+                            <div class="rec-item-price">74 999 ₴</div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- Стрілка праворуч -->
+                <button class="slider-arrow arrow-right">⟩</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФУТЕР -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">COOL</div>
+            <nav class="footer-nav">
+                <a href="#">ЗАМОВЛЕННЯ ТА ДОСТАВКА</a>
+                <a href="#">НОВИНКИ</a>
+                <a href="#">ХІТ ПРОДАЖ</a>
+                <a href="#">КОНТАКТИ</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>

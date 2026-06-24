@@ -1,0 +1,340 @@
+/* СКИДАННЯ СТИЛІВ ТА БАЗОВІ НАЛАШТУВАННЯ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 1. ВЕРХНЯ ПАНЕЛЬ */
+.top-bar {
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.top-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* 2. НАВІГАЦІЯ */
+.main-header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    gap: 35px;
+}
+
+.main-nav a {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: opacity 0.2s;
+}
+
+.main-nav a:hover {
+    opacity: 0.7;
+}
+
+.header-phone {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* 3. ГОЛОВНИЙ БАННЕР (ОНОВЛЕНИЙ ПО ЦЕНТРУ ВІД КРАЮ ДО КРАЮ) */
+.hero-section {
+    position: relative;
+    background-color: #f7f9fa; 
+    height: 650px; /* Збільшена висота, щоб картинка була великою */
+    overflow: hidden;
+    width: 100%; 
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 100% !important; 
+    padding: 0 !important; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+.hero-img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; 
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px; 
+}
+
+.hero-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    text-shadow: 0 2px 15px rgba(255, 255, 255, 0.9); 
+}
+
+.btn-order {
+    display: inline-block;
+    background-color: #4f2ee8;
+    color: #ffffff;
+    padding: 14px 45px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-order:hover {
+    background-color: #3b1fc4;
+    transform: scale(1.05);
+}
+
+/* 4. ВКЛАДКИ / ТАБИ */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px 0 30px 0;
+}
+
+.tab-item {
+    font-size: 13px;
+    font-weight: 600;
+    color: #8c8c8c;
+    padding-bottom: 6px;
+    position: relative;
+}
+
+.tab-item.active {
+    color: #000000;
+}
+
+.tab-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #4f2ee8;
+}
+
+/* 5. СІТКА З ТОВАРАМИ (ОНОВЛЕНІ СТИЛІ ДЛЯ КАРТОК-КНОПОК) */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #f2f2f2; /* Світла акуратна рамка як на макеті */
+    border-radius: 4px;
+    padding: 25px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none; /* Гарантує відсутність підкреслень тексту */
+    color: #000000; /* Фіксує чорний колір тексту */
+    cursor: pointer; /* Робить курсор у вигляді пальчика */
+    transition: box-shadow 0.3s, transform 0.2s;
+}
+
+/* Ефект підведення мишки до картки */
+.product-card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    transform: translateY(-3px); /* Картка м'яко підніметься вгору */
+}
+
+/* Ефект самого кліку/натискання на картку */
+.product-card:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+}
+
+.wishlist-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #cccccc;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 3;
+    transition: color 0.2s;
+}
+
+.wishlist-btn:hover {
+    color: #ff4d4f;
+}
+
+.product-img-box {
+    width: 100%;
+    height: 220px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9; 
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.product-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+}
+
+.product-title {
+    font-size: 12px;
+    font-weight: 500;
+    color: #444444;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    flex-grow: 1; 
+}
+
+.product-price {
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* 6. ФУТЕР */
+.main-footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-nav a {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.footer-nav a:hover {
+    opacity: 1;
+}
+
+/* АДАПТИВНІСТЬ ДЛЯ ЕКРАНІВ ПЛАНШЕТІВ ТА МОБІЛЬНИХ */
+@media (max-width: 992px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-nav {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    .header-content, .footer-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .main-nav, .footer-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-section {
+        height: 450px;
+    }
+    .hero-title {
+        font-size: 28px;
+    }
+}
