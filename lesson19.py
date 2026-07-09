@@ -4,11 +4,9 @@ class Event:
         self.date = date
 
     def show(self):
-        """Виводить інформацію про подію в консоль."""
         print(f"Подія: {self.title} | Дата: {self.date}")
 
     def get_info(self):
-        """Повертає рядок з інформацією, а не print."""
         return f"[Event] Назва: {self.title}, Дата: {self.date}"
 
 class Training(Event):
@@ -17,7 +15,6 @@ class Training(Event):
         self.coach = coach  
 
     def show(self):
-        """Перевизначений метод show()."""
         print(f"Тренування: {self.title} | Дата: {self.date} | Тренер: {self.coach}")
 
     def get_info(self):
@@ -43,7 +40,6 @@ class OnlineEvent(Event):
         self.link = link 
 
     def show(self):
-        """Власний метод show()."""
         print(f"Онлайн-подія: {self.title} | Дата: {self.date} | Посилання: {self.link}")
 
     def get_info(self):
