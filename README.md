@@ -6,11 +6,11 @@
 <a href="lesson16.html" target="_blank2">Buauty salon</a>
 </p>
 <p>
-<a href="lesson17.py" target="_blank2">Library</a>
+<a href="lesson17.py" target="_blank3">Library</a>
 </p>
 <p>
-<a href="lesson18.py" target="_blank2">OOP</a>
+<a href="lesson18.py" target="_blank4">OOP</a>
 </p>
 <p>
-<a href="lesson19.py" target="_blank2">OOP_2</a>
+<a href="lesson19.py" target="_blank5">OOP_2</a>
 </p>
