@@ -14,3 +14,6 @@
 <p>
 <a href="lesson19.py" target="_blank5">OOP_2</a>
 </p>
+<p>
+<a href="lesson20.py" target="_blank6">OOP_3</a>
+</p>
