@@ -38,7 +38,7 @@ def skills():
 
 @app.route('/contact')
 def contact():
-    content = "<h2>Контактна інформація</h2><p>Email: adsdasd@gmail.com <br> GitHub: ://github.com</p>"
+    content = "<h2>Контактна інформація</h2><p>Email: adsdasd@gmail.com <br> GitHub: :https://artem-vaka.github.io/index.html/</p>"
     return render_page(content)
 
 
