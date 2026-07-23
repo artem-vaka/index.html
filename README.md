@@ -18,11 +18,11 @@
 <a href="lesson20.py" target="_blank6">OOP_3</a>
 </p>
 <p>
-<a href="lesson21.py" target="_blank6">Library_2</a>
+<a href="lesson21.py" target="_blank7">Library_2</a>
 </p>
 <p>
-<a href="lesson22.py" target="_blank6">FLASK</a>
+<a href="lesson22.py" target="_blank8">FLASK</a>
 </p>
 <p>
-<a href="app.py" target="_blank6">FLASK_2</a>
+<a href="../app.py" target="_blank9">FLASK_2</a>
 </p>
