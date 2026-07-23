@@ -23,3 +23,6 @@
 <p>
 <a href="lesson22.py" target="_blank6">FLASK</a>
 </p>
+<p>
+<a href="l23" target="_blank6">FLASK_2</a>
+</p>
