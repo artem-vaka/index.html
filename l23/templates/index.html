@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Планувальник завдань</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Мій планувальник</h1>
+        
+        <form action="/add" method="POST" class="todo-form">
+            <input type="text" name="todo" placeholder="Введіть нове завдання..." required>
+            <button type="submit">Додати</button>
+        </form>
+
+        <ul class="todo-list">
+            {% for todo in todos %}
+                <li>
+                    <span>{{ todo }}</span>
+                    <a href="{{ url_for('delete_todo', index=loop.index0) }}" class="delete-btn">Видалити</a>
+                </li>
+            {% else %}
+                <li class="empty">Список завдань порожній.</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
