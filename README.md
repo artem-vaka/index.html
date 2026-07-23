@@ -24,5 +24,5 @@
 <a href="lesson22.py" target="_blank8">FLASK</a>
 </p>
 <p>
-<a href="./app.py" target="_blank9">FLASK_2</a>
+<a href="index.html" target="_blank9">FLASK_2</a>
 </p>
